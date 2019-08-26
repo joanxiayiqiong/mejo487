@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body {
+	margin: 0px;
+	background-color: #666;
+	font-family: "Verdana", sans-serif;
+	line-height: 1.5;
+}
+
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+
+	width: 960px;
+	background: #FFF;
+	margin:auto;/* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+.content {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#header{
+	background-color: #47A1D4;
+	margin-top: 0px;
+}
+
+#footer{
+	background-color: #47A1D4;
+	margin: auto;
+	color: white;
+	line-height: 3;
+	padding-bottom: 1px;
+}
+
+h2,h4{
+	color: #5680D3;
+}
+
+img{
+	float: right;
+}
+
+ul{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+ol{
+	margin-bottom: 40px;
+}
+
+a:link{
+	color: #5680D3;
+}
