@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Learning JS Day 1</title>
+  <meta name="description" content="JS Homework">
+  <meta name="author" content="Steven King">
+
+  <link rel="stylesheet" href="css/main.css?v=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.js"></script>
+  <script src="js/main.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <h1>JS Homework</h2>
+  <h2>Day 1</h2>
+  <p>Follow the instructions below and output the answer to the console as well as dispaly on the page.</p>
+  <ol>
+
+
+    <li>Write the JavaScript to display the current day and time in the following format and output it to the html page to the span with an id of "answer1"
+      <p>Today is Monday.<br/>
+Current Time : 8:55:25 PM</p>
+      <h4>Answer:</h4>
+    <div class="answer" id="answer1"> <script>question1();</script></div>
+    </li>
+
+    <li>Write the JavaScript to display the current day and time in the following format and output it to the html page to the span with an id of "answer2"
+      <p>mm-dd-yyyy, mm/dd/yyyy and dd/mm/yyyy each on a seperate line.<p>
+      <h4>Answer:</h4>
+    <div class="answer" id="answer2"><script>question2();</script></div>
+    </li>
+
+
+    <li>Write an HTML button below and when it clicks, it prints/displays the content of the current html page (current window).
+      <button type="button" id="myBtn" onclick="window.print()">Print/Display</button>
+    </li>
+
+    <li>Follow the instructions on Chapter 1 and and Draw the graphics below this ordered list in the id called mainCanvas.
+    </li>
+
+  </ol>
+  <canvas id="myCanvas" width="200" height="200"
+style="border:1px solid #c3c3c3; margin-left:40px"></canvas>
+    <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#123456";
+    ctx.fillRect(50,50,100,100);
+    var ctx1 = canvas.getContext("2d");
+    ctx1.fillStyle = "#654321";
+    ctx1.fillRect(0,0,100,100);
+    var ctx2 = canvas.getContext("2d");
+    ctx2.fillStyle = "#345612";
+    ctx2.fillRect(100,100,100,100);
+    </script>
+  </canvas>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
