@@ -82,9 +82,11 @@ main > .container-top {
 }
 
 /* nav icon hover */
+
 .bicon1 {
   width: 65px;
   height: 90px;
+  position: relative;
   background: url("../img/bicon1.png") no-repeat;
   background-size: 58px 70px;
   background-position: 0px 3px;
@@ -96,6 +98,13 @@ main > .container-top {
   background-position: 1px 3px;
   outline: none;
 }
+
+/* a.biconx:focus{
+  background: url("../img/gicon1.png") no-repeat;
+  background-size: 57px 86px !important;
+  position: absolute 5% 10% ;
+  outline: none;
+} */
 
 
 
@@ -511,6 +520,44 @@ input[type=checkbox]:checked + label
   padding: 0 0 0 0px;
 }
 
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #2498f2;
+  text-align: center;
+  border:1px solid grey;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent grey transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 
 
