@@ -11,3 +11,8 @@
 9.15 [Project-1 CSS](https://joanxiayiqiong.github.io/mejo487/p1-css)
 
 9.17 [Assignment-5 JS Slider](https://joanxiayiqiong.github.io/mejo487/assignment-slider-5)
+
+9.17 [Assignment-6 JQuery Slider](https://joanxiayiqiong.github.io/mejo487/assignment-jquery-6)
+
+
+
