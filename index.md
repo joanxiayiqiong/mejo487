@@ -12,7 +12,8 @@
 
 9.17 [Assignment-5 JS Slider](https://joanxiayiqiong.github.io/mejo487/assignment-slider-5)
 
-9.17 [Assignment-6 JQuery Slider](https://joanxiayiqiong.github.io/mejo487/assignment-jquery-6)
+9.19 [Assignment-6 JQuery Slider](https://joanxiayiqiong.github.io/mejo487/assignment-jquery-6)
 
+9.29 [Project-2 Educational Website](https://joanxiayiqiong.github.io/mejo487/p2-edu)
 
 
