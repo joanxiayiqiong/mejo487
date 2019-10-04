@@ -16,4 +16,8 @@
 
 9.29 [Project-2 Educational Website](https://joanxiayiqiong.github.io/mejo487/p2-edu)
 
+10.03 [Assignment-7 C3 JS](https://joanxiayiqiong.github.io/mejo487/assignment-c3js-06)
+
+
+
 
