@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- C3 styles -->
+    <link href="css/c3.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Causes of Death Infographics</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#bycause">
+                  <span data-feather="database" style="color:orange;"></span>
+                  Deaths by Cause
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#byage">
+                  <span data-feather="user" style="color:blue;"></span>
+                  Deaths by Age
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#byrisk">
+                  <span data-feather="alert-circle" style="color:red;"></span>
+                  Deaths by Risk Factors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#byrate">
+                  <span data-feather="activity" style="color:green;"></span>
+                  Death Rate in Long Term
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <p class="intro">As global population increases, life expectancy rises, and living standards improve, causes of death across the world are changing. <br>The following data visualisations present a global overview of the causes of death, the age of death, the risk factors of death, and the long term death rates. <br>The website is only for educational use. Source credits to <a href="https://ourworldindata.org/causes-of-death#causes-of-death-over-the-long-run">ourworldindata.org<a>.</p>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h3 id="bycause">Deaths by Cause, World</h3>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <p>Total annual number of deaths by high-level cause category: <br>
+        Communicable and other diseases include maternal, neonatal,and nutritional disease. <br>
+        Non-communicable diseases (NCDs) include cardiovascular disease, cancers, diabetes and respiratory disease. Injuries include road accidents, homicides and conflict, drowning, fire-related accidents, natural disasters and self-harm. <br>
+        At a global level we see that the majority of deaths are attributed to the category of non-communicable diseases (NCDs); these are chronic, long-term illnesses such as cardiovascular diseases (including stroke), respiratory disease, cancers and diabetes.  Collectively NCDs account for more than 70 percent of global deaths.</p>
+        </div>
+        <div class="my-4 w-100" id="cause" width="800" height="480"></div>
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h3 id="byage">Deaths by Age, World</h3>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <p>Total annual number of deaths from all causes, broken down by broad age categories.<br>The demographics of deaths has changed significantly since 1990 with a notable shift from young-to-old. In 1990 nearly one-quarter of all deaths were in children under 5 years old. In 2017, this had declined to just under 10 percent. In contrast, the share of deaths in the over-70s age bracket has increased from 33 percent to 49 percent over this period.</p>
+        </div>
+        <div class="row">
+        <div class="my-4 w-50" id="age1990" width="900" height="380"></div>
+        <div class="my-4 w-50" id="age2017" width="900" height="380"></div>
+        </div>
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h3 id="byrisk">Deaths by Risk Factors, World</h3>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <p>Total annual number of deaths by risk factor, measured across all age groups and both sexes.<br>The contribution of specific risk factors varies significantly by country. For most high-income countries, the dominant risk factors are those related to healthy diets, smoking and alcohol intake. Other risk factors such as clean water, sanitation, and child wasting or stunting are very low. In low-income countries the inverse is true: in Sierra Leone for example, the top risk factors include child wasting, household air pollution, unsafe water source, poor sanitation, and no access to handwashing facilities. </p>
+        </div>
+        <div class="my-4 w-100" id="risk" width="900" height="380"></div>
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h3 id="byrate">Death Rate through the 20th Century</h3>
+        </div>
+        <div class="my-4 w-100" id="rate" width="900" height="380"></div>
+
+      </div>
+      </main>
+
+        </div>
+      <!-- close the container -->
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script>
+      feather.replace()
+    </script>
+    <!-- D3, C3 stuff -->
+    <script src="js/d3.min.js"></script>
+    <script src="js/c3.min.js"></script>
+    <!-- <script src="js/chart-dynamic.js"></script> -->
+    <!-- <script src="js/chart.js"></script> -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
