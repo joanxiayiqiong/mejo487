@@ -18,6 +18,6 @@
 
 10.03 [Assignment-7 C3 JS](https://joanxiayiqiong.github.io/mejo487/assignment-c3js-06)
 
-10.22 [Project-3 Data Storytelling Dashboard](https://joanxiayiqiong.github.io/mejo487/p3-dataStory)
+10.22 [Project-3 Data Storytelling Dashboard](https://joanxiayiqiong.github.io/mejo487/p3-data)
 
 
