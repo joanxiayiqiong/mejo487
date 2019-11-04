@@ -1,0 +1,171 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Merging APIs</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/offcanvas/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand mr-auto mr-lg-0" href="#">API Projects</a>
+  <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#googlemap">Google Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#youtube">Youtube</a>
+      </li>
+
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+<!-- <div class="nav-scroller bg-white shadow-sm">
+  <nav class="nav nav-underline">
+    <a class="nav-link active" href="#newssearch">News</a>
+    <a class="nav-link" href="#">
+      Friends
+      <span class="badge badge-pill bg-light align-text-bottom">27</span>
+    </a>
+    <a class="nav-link" href="#googlemap">Google Map</a>
+    <a class="nav-link" href="#youtubesearch">Youtube</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+  </nav>
+</div> -->
+
+<main role="main" class="container">
+
+  <!-- News -->
+  <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-dark rounded shadow-sm">
+    <img class="mr-3" src="/docs/4.3/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+    <div class="lh-100">
+    <h6 class="mb-0 text-white lh-100">News Search</h6>
+      <small>Using News API to offer relevant and timely news to users</small>
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">News Nerd</h6>
+    <div class="media text-muted pt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Sources</span>
+              </h6>
+              <ul id="sources-area" class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div id="feed-area"class="d-flex flex-wrap pt-3 pb-2 mb-3 border-bottom">
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Google Maps -->
+  <div id="googlemap" class="d-flex align-items-center p-3 my-3 text-white-50 bg-success rounded shadow-sm">
+    <img class="mr-3" src="/docs/4.3/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+    <div class="lh-100">
+      <h6 class="mb-0 text-white lh-100">Google Map</h6>
+      <small>Build customized experiences with static and dynamic maps</small>
+    </div>
+  </div>
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Map and Marks</h6>
+    <div id="map" class="media text-muted pt-3" style="margin:10px;height:500px;">
+  </div>
+  </div>
+
+  <!-- Youtube -->
+  <script src="js/youtube.js"></script>
+  <div id="youtube" class="d-flex align-items-center p-3 my-3 text-white-50 bg-danger rounded shadow-sm">
+    <img class="mr-3" src="/docs/4.3/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+    <div class="lh-100">
+      <h6 class="mb-0 text-white lh-100">Youtube Video</h6>
+      <small>Returns a list of videos that match the API request parameters.</small>
+    </div>
+  </div>
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Youtube Videos Socceer Recommendation</h6>
+    <div class="media text-muted pt-3" style="min-height:500px;">
+      <button class="btn btn-secondary btn-sm" onclick="authenticate().then(loadClient)" style="margin:10px;">Authorize and Load</button>
+      <button class="btn btn-secondary btn-sm" onclick="execute()" style="margin:10px;">Execute</button>
+        <div id="videos" class="my-3 p-3 bg-white rounded shadow-sm">
+    </div>
+  </div>
+  </div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<script src="js/offcanvas.js"></script>
+<script src="js/news.js"></script>
+<!-- map -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVHvSaaO0dMzpaEmqZ9GM5g3Qv5Vz_e6E&callback=initMap"></script>
+<script src="js/map.js"></script>
+<!-- youtube -->
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="js/youtube.js"></script>
+
+</body>
+</html>
