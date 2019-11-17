@@ -35,7 +35,7 @@ function parseVideos(response){
     console.log(tempPath.items[i].snippet.title);
     console.log(tempPath.items[i].id.videoId);
     html += '<h5 class="border-bottom border-gray pb-2 mb-0">' + tempPath.items[i].snippet.title + '</h4><br>';
-    html += '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ tempPath.items[i].id.videoId +' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    html += '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ tempPath.items[i].id.videoId +' " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     console.log(html);
   };
   document.getElementById("videos").innerHTML=html;
