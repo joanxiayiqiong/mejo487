@@ -28,6 +28,26 @@ body{
   background-size: cover;
 }
 
+.bg-6{
+  background-image: url("../img/bg6.jpg");
+  background-size: cover;
+}
+
+.bg-7{
+  background-image: url("../img/bg7.png");
+  background-size: cover;
+}
+
+.bg-8{
+  background-image: url("../img/bg8.png");
+  background-size: cover;
+}
+
+.bg-9{
+  background-image: url("../img/bg9.png");
+  background-size: cover;
+}
+
 .container {
   max-width: 960px;
 }

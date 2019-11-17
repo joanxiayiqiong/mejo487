@@ -31,8 +31,7 @@ function parseData(data){
         document.getElementById("tweet-container"),
         {
           linkColor: "#55acee",
-          align:"center",
-          conversation:"default"
+          align:"center"
         }
       );
   }
