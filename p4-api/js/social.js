@@ -7,7 +7,7 @@ $( document ).ready(function() {
 function loadData(){
   $.ajax({
     type:"GET",
-    url:"../twitter-bot/tweets.json",
+    url:"twitter-bot/tweets.json",
     dataType:"json",
     success:parseData
   });
