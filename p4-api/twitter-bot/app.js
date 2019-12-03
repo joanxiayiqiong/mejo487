@@ -5,7 +5,7 @@ const T = new Twitter(config);
 
 // Set up your search parameters
 const params = {
-  q: 'catcafe',
+  q: 'wildfire',
   count: 10,
   result_type: 'recent',
   lang: 'en'

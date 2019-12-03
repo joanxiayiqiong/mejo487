@@ -1,33 +1,31 @@
 $( document ).ready(function() {
-    loadData();
+    loadnewsData();
 });
 
 
 
-function loadData(){
+function loadnewsData(){
   $.ajax({
     type:"GET",
-    url:"https://newsapi.org/v2/everything?sources=google-news&q=cat&apiKey=ead9c472446a47dda270e2c5efc6b2c7",
+    url:"https://newsapi.org/v2/everything?q=wildfire&sortBy=popularity&apiKey=ead9c472446a47dda270e2c5efc6b2c7",
     dataType:"json",
-    success:parseData
+    success:parsenewsData
   });
 }
 
-function parseData(data){
+function parsenewsData(data){
   console.log(data);
   var html = "";
   var articles = [];
   var tempPath = data["articles"];
 
-  for (var i = 0; i < tempPath.length; i++) {
+  for (var i = 0; i < 15; i++) {
     articles.push(tempPath[i]);
     // console.log(articles[i]["title"]);
     // console.log(tempPath[i]["title"]);
-    if (tempPath) {
-
-    }
-    html += '<div><h4><a  class="text-dark" href="' + articles[i]["url"] + '">' + articles[i]["title"] + '</a></h4>'
-    html += '<p>' + articles[i]["description"] + '</p></dive>'
+    html += '<div><h3 style="margin-top:30px"><a href="' + articles[i]["url"] + '">' + articles[i]["title"] + '</a></h3>'
+    html += '<p>' + articles[i]["description"] + '</p>'
+    html += '<img src="' + articles[i]["urlToImage"] + '" style="width:100%;height=auto;" alt=""/></div>'
   }
 
   $("#feed-area").html(html);

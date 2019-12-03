@@ -1,112 +1,233 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Project 4: APIs</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <title>Wildfires - Stay Safe When a Wildfire Treatens</title>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="css/product.css" rel="stylesheet">
-  </head>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <body>
-    <nav class="site-header sticky-top py-1">
-  <div class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2 d-none d-md-inline-block" href="video.html">Video</a>
-    <a class="py-2 d-none d-md-inline-block" href="news.html">News</a>
-    <a class="py-2" href="index.html"><i class='fas fa-cat' style='font-size:24px'></i></a>
-    <a class="py-2 d-none d-md-inline-block" href="social.html">Social</a>
-    <a class="py-2 d-none d-md-inline-block" href="map.html">Locations</a>
-  </div>
-</nav>
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
 
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light bg-1">
-  <div class="col-md-8 p-lg-5 mx-auto my-5 ">
-    <h1 class="display-6 font-weight-normal">Cat Cafes Around The U.S. : An Alternative Model for Rescued Cat Adoption</h1>
-    <p class="lead">Cat cafes were popularized in Japan but they have made their way to the U.S. in recent years, much to the glee of all cat-obsessed Americans. And what's great is that the majority of these cafes are very much focused on the well-being of the cats in their establishment, and serve as an alternative model for rescued cat adoption. </p>
-    <a class="btn btn-outline-secondary" href="about.html">Learn More</a>
-  </div>
-</div>
+  <!-- arcgis -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/themes/light/main.css" />
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-    <div class="my-3 py-3">
-      <a class="text-light" style="text-decoration:none" href="video.html"><h2 class="display-5">Kitten Rescue Cat Cam</h2>
-      <p class="lead">Watch tiny kittens eat, play, learn and grow</p>
-    </a>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Wildfires</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Info Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">News</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="bg-light shadow-sm mx-auto bg-2" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-    <a class="text-dark" style="text-decoration:none" href="news.html">
-      <h2 class="display-5">Recent Press</h2>
-      <p class="lead">Explore growing cat cafe business around the world</p>
-    </a>
-    </div>
-    <div class="bg-dark shadow-sm mx-auto bg-3" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-</div>
+  </nav>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-      <a class="text-dark" style="text-decoration:none" href="social.html">
-      <h2 class="display-5">Social Update</h2>
-      <p class="lead">Keep up with your favorite cat cafe</p>
-    </a>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Wildfires</h1>
+        <h2 class="text-white-50 mx-auto mt-4 mb-5">Access wildfire data, live feeds, technology, and resources. Manage your wildfire response with live feeds and sensor data.</h2>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Learn More</a>
+      </div>
     </div>
-    <div class="bg-dark shadow-sm mx-auto bg-4" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-    <div class="my-3 py-3">
-    <a class="text-light" style="text-decoration:none" href="map.html">
-      <h2 class="display-5">Locations Explore</h2>
-      <p class="lead">Cat Cafe on everyone's radar</p>
-    </a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Wildfires - Stay Safe When a Wildfire Treatens</h2>
+          <p class="text-white-50"><strong>“Have a 5-minute plan. Have a 2-minute plan.”</strong> <br><br>
+            Charles evacuated during the Camp Fire last year, taking little more than his family and a few critical belongings with him. With wildfire conditions still affecting multiple states today, Be Ready by making your plan. <br><br>
+            <strong>Wildfires can ruin homes and cause injuries or death to people and animals. A wildfire is an unplanned fire that burns in a natural area such as a forest, grassland, or prairie. </strong><br><br>
+
+            Wildfires can often be caused by humans or lightning; cause flooding or disrupt transportation, gas, power, and communications; happen anywhere, anytime. Risk increases with in periods of little rain and high winds, and cost the Federal Government billions of dollars each year.<br><br>
+            <span style="color:#961512">
+            <strong>IF YOU ARE UNDER A WILDFIRE WARNING, GET TO SAFETY RIGHT AWAY<br>
+              Leave if told to do so.<br>
+              If trapped, call 9-1-1.<br>
+              Listen for emergency information and alerts.<br>
+              Use N95 masks to keep particles out of the air you breathe.</p></strong></span>
+        </div>
+      </div>
+
     </div>
-    <div class="bg-light shadow-sm mx-auto bg-5" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
-</div>
+    <img src="img/bg-about.jpeg" class="img-fluid" style="width:100%;" alt="">
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <iframe width="100%" height="500px" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/10GX5C"></iframe>
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Wildfire Public <br>Information Map</h4>
+            <p class="text-black-50 mb-0">This is a map of wildfire locations (active/recent) and other sources of information related to wildfires. Manage your wildfire response with live feeds and sensor data.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div id="viewDiv" class="col-lg-6" style="min-height:400px;">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">California Fire Situation Awareness</h4>
+                <p class="mb-0 text-white-50">Map of current wildfires in California, maintained by the California Governor's Office of Emergency Services</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div id="viewDivsmoke" class="col-lg-6" style="min-height:400px;"></div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Smoke Forecast Map</h4>
+                <p class="mb-0 text-white-50">Hourly smoke forecast for the next 48 hours across the Continental United States. Concentrations are reported in micrograms per cubic meter. </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="fas fa-rss fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-10">Wildfire Recent Press</h2>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-6 mb-12 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fab fa-twitter text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Twitter</h4>
+              <hr class="my-4">
+              <div id="tweet-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-12 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="far fa-newspaper text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">News</h4>
+              <hr class="my-4">
+              <div id="feed-area"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <i class='fas fa-cat' style='font-size:24px'></i>
-      <small class="d-block mb-3 text-muted">&copy; Joan Xia 2019<br>For Educational Use Only<br><a href="https://www.bustle.com/p/11-cat-cafes-around-the-us-that-should-be-on-everyones-radar-in-2019-15570710">Reference</a></small>
+
     </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Joan Xia 2019 | For Educational Use Only
+    </div>
+    <div class="social d-flex justify-content-center">
+      <a href="#" class="mx-2">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+  <!-- twitter -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+  <script src="https://platform.twitter.com/widgets.js"></script>
+
+  <!-- news -->
+  <script src="js/news.js"></script>
+  <script src="js/twitter.js"></script>
+
+  <!-- arcgis -->
+  <script src="https://js.arcgis.com/4.13/"></script>
+  <script src="js/calimap.js"></script>
+  <script src="js/smokemap.js"></script>
+
+
+</body>
+
 </html>
