@@ -22,4 +22,4 @@
 
 11.04 [Merging APIs](https://joanxiayiqiong.github.io/mejo487/merging-apis)
 
-11.17 [Project-4 APIs](https://mejo487-api.herokuapp.com/)
+11.17 [Project-4 APIs](https://joanxiayiqiong.github.io/mejo487/p4-api/index.html)
