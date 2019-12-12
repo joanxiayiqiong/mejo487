@@ -5,7 +5,7 @@ $( document ).ready(function() {
 function loadPeopleSources(){
     $.ajax({
             type:"GET",
-            url:"people.json",
+            url:"https://www.googleapis.com/download/storage/v1/b/teaching-api/o/people.json?generation=1576123202877101&alt=media",
             dataType:"json",
             success: parsePeopleSources
 });
