@@ -23,3 +23,5 @@
 11.04 [Merging APIs](https://joanxiayiqiong.github.io/mejo487/merging-apis)
 
 11.17 [Project-4 APIs](https://joanxiayiqiong.github.io/mejo487/p4-api/index.html)
+
+12.12 [Final](https://joanxiayiqiong.github.io/mejo487/final/index.html)
