@@ -7,7 +7,7 @@ $( document ).ready(function() {
 function loadData(){
   $.ajax({
     type:"GET",
-    url:"photos.json",
+    url:"https://www.googleapis.com/download/storage/v1/b/teaching-api/o/photos.json?generation=1576123660992318&alt=media",
     dataType:"JSON",
     success:parseData
   });
